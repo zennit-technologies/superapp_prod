@@ -1,0 +1,58 @@
+{
+    "name": "spatie/laravel-model-status",
+    "description": "A package to enable assigning statuses to Eloquent Models",
+    "keywords": [
+        "spatie",
+        "laravel-status"
+    ],
+    "homepage": "https://github.com/spatie/laravel-model-status",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Verhelst",
+            "email": "tvke91@gmail.com",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0|^9.3",
+        "orchestra/testbench": "~3.8.0|^4.0|^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\ModelStatus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\ModelStatus\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\ModelStatus\\ModelStatusServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
